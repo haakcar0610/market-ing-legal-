@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MARKET-İNG — Gizlilik Politikası</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.65;
+         max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; color: #1c1c1e; }
+  h1 { font-size: 1.7rem; margin-bottom: .4em; }
+  h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #e5e5ea; padding-bottom: .3em; }
+  ul { padding-left: 1.2em; }
+  li { margin: .35em 0; }
+  blockquote { margin: 1.4em 0; padding: .8em 1em; background: #fff4e5;
+                border-left: 4px solid #ff9f0a; border-radius: 6px; }
+  blockquote p { margin: .3em 0; font-size: .95rem; }
+  code { background: #f2f2f7; padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  footer { margin-top: 3em; font-size: .85rem; color: #6e6e73; }
+</style>
+</head>
+<body>
+<h1>Gizlilik Politikası ve Veri Toplama Beyanı</h1>
+<p>Bu belge, MARKET-İNG müşteri uygulamasının mevcut mock/devre dışı çalışma modunda hangi verileri topladığı, ne amaçla topladığı, nasıl saklandığı ve kullanıcının hangi haklara sahip olduğu konusunda açıklama içerir. Bu metin, gerçek üretim altyapısı kurulana kadar geçerli olan açıklamadır.</p>
+<h2>1. Toplanan veriler</h2>
+<p>Uygulama içinde şu veriler yerel olarak toplanabilir ve cihaz üzerinde saklanabilir:</p>
+<ul>
+<li>Ad, e-posta adresi ve teslimat adresi bilgileri (gerekli durumlarda kullanıcı tarafından girilir; mock akışta örnek değerlerle işler)</li>
+<li>Sipariş geçmişi ve aktif sipariş bilgileri</li>
+<li>Sepet içeriği, favori ürünler ve beğeni/yorum etkileşimleri</li>
+<li>Hikâye görüntüleme durumu (hangi hikâyelerin görüldüğü, görüldüğünü işaretleme)</li>
+<li>Takip edilen ve engellenen mağazalar listeleri</li>
+<li>Hata veya işlem sırasında oluşan yerel kullanım bilgileri (örneğin sepet tutarı veya iş akışı notları)</li>
+</ul>
+<p>Bu veriler, mevcut mock mimaride kullanıcı tarafından cihazda tutulur. Uzak sunucuya gönderilmez; gerçek ağ/HTTP bağlantısı yoktur.</p>
+<h2>2. Toplama amacı</h2>
+<p>Veriler şu amaçlarla kullanılır:</p>
+<ul>
+<li>Siparişlerin oluşturulması ve takibi</li>
+<li>Teslimat bilgisi ve adreslerin uygun şekilde işlenmesi</li>
+<li>Ürün favori/engelli/izleme davranışlarının anlık uygulama deneyiminde korunması</li>
+<li>Hikâye/akış davranışının &quot;görüldü&quot; ve &quot;görülmedi&quot; olarak kalıcı hale getirilmesi</li>
+<li>Uygulama akışını kişiselleştirmek ve kullanıcı deneyimini iyileştirmek</li>
+<li>Mock işlemler sırasında deneme ve doğrulama akışlarını sürdürülebilir tutmak</li>
+</ul>
+<h2>3. Saklama süresi</h2>
+<ul>
+<li>Yerel veriler, kullanıcı cihazında mevcut uygulama oturumunda ve kullanılabilir yerel depolamada tutulur.</li>
+<li>Mock/dev ortamında verilerin silinmesi, uygulama verilerinin temizlenmesi veya cihaz üzerindeki yerel depolama temizlenmesiyle mümkündür.</li>
+<li>Gerçek üretim sürecine geçildiğinde, veri saklama süresi ve silme politikası ayrı bir mevzuat ve güvenlik değerlendirmesi ile netleştirilmelidir.</li>
+</ul>
+<h2>4. Güvenlik ve yerel saklama</h2>
+<ul>
+<li>Mevcut sürümde veri, uygulama içindeki yerel depolama alanında saklanır.</li>
+<li>Uzak sunucuya veri aktarımı yapılmaz; gerçek ödeme, gerçek kargo, gerçek kimlik doğrulama altyapısı yoktur.</li>
+<li>Bu nedenle, bu belge yalnızca mock/test amaçlı veri işleme kapsamını açıklar; üretim ortamı ve gerçek veri işleme için ayrı güvenlik incelemesi gerekir.</li>
+</ul>
+<h2>5. KVKK / GDPR hakları</h2>
+<p>Kullanıcı, gerçek üretim ortamı ve mevzuat kapsamı açıldığında aşağıdaki haklardan yararlanabilir:</p>
+<ul>
+<li>Kişisel verilerinin işlenme amaçlarını öğrenme</li>
+<li>Kişisel verilerine erişme</li>
+<li>Kişisel verilerinin düzeltilmesini isteme</li>
+<li>Kişisel verilerinin silinmesini isteme</li>
+<li>İşlemeye itiraz etme</li>
+<li>Veri işlenmesinin kısıtlanmasını isteme</li>
+<li>Otomatik karar verme ve profil oluşturma süreçlerine itiraz etme</li>
+<li>İlgili kişi olarak başvuru yapma</li>
+</ul>
+<p>Bu mock aşamasında, kullanıcı verisi gerçek olarak üçüncü taraflara aktarılmadığı için veri sorumluluğu ve işlem denetimi uygulama düzeyinde sınırlıdır. Ancak ileride gerçek üretim geçişi yapılacaksa KVKK/GDPR uyumluluk politikası yeniden düzenlenmelidir.</p>
+<h2>6. İletişim</h2>
+<p>Gizlilik, veri işleme ve KVKK/GDPR hakları ile ilgili sorular için iletişim kanalı olarak ürün/uygulama sahibi tarafındaki resmi iletişim adresi ve destek kanalı kullanılmalıdır. Bu proje kapsamında uygulamaya ait gerçek iletişim bilgisi kurulmadığı için, bu alan üretim hazırlığı sürecinde doldurulmalıdır.</p>
+<blockquote>
+<p><strong>Durum (8.4a, 14.11.2026):</strong> yayıncı adı ve destek e-postası <strong>BEKLİYOR</strong> — kullanıcı kararı 13.11.2026: &quot;boş kalsın&quot;. Bu alan dolmadan politika yayına alınmaz; mağaza incelemesinde boş iletişim reddedilme sebebidir. Barındırma kararı verildi: ayrı public &quot;legal&quot; reposu + GitHub Pages (K-50, <code>docs/RELEASE.md</code> §4).</p>
+</blockquote>
+<h2>7. Son durum</h2>
+<p>Bu belge, şu anki mock ve yerel model operasyon için geçerlidir: veri cihaz üzerinde tutulur, uygulama gerçek ağ katmanına bağlanmaz ve bu aşamada veri paylaşımı yoktur. Gerçek kullanım ve üretim dönemi için bu politika güncellenmeli ve yasal denetim altında revize edilmelidir.</p>
+<footer>Son güncelleme: 14.11.2026 · MARKET-İNG</footer>
+</body>
+</html>
